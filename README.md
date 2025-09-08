@@ -1,12 +1,12 @@
-# 📊 Termopad Analyzer
+#  Termopad Analyzer
 
-**Termopad Analyzer** es una aplicación de escritorio desarrollada en **Python** con **Tkinter**, diseñada para analizar archivos de datos provenientes de un **termopar/termopad** en formato **Excel**.  
+**Termopad** es una aplicación de escritorio desarrollada en **Python** con **Tkinter**, diseñada para analizar archivos de datos provenientes de un **termopar/termopad** en formato **Excel**.  
 
 La aplicación permite cargar un archivo Excel con las columnas necesarias y extraer automáticamente puntos críticos de temperatura, junto con los intervalos de tiempo asociados.  
 
 ---
 
-## 🚀 Características
+##  Características
 
 - Carga de archivos Excel (`.xlsx`, `.xls`).
 - Identificación automática de:
@@ -22,7 +22,7 @@ La aplicación permite cargar un archivo Excel con las columnas necesarias y ext
 
 ---
 
-## 📂 Requisitos
+## Requisitos
 
 - Python 3.9 o superior (desarrollado con Python 3.13.3).  
 - Librerías necesarias:
