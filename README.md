@@ -28,6 +28,11 @@ La aplicación permite cargar un archivo Excel con las columnas necesarias y ext
 - Librerías necesarias:
   ```bash
   pip install pandas openpyxl pillow
+ Soporte para múltiples archivos en lote.
+ ---
+## capturas de pantalla del proyecto 
+<img width="1122" height="1035" alt="image" src="https://github.com/user-attachments/assets/87696fd4-8d36-4a63-a328-9e5eb6dbbe9f" />
+<img width="1120" height="1030" alt="image" src="https://github.com/user-attachments/assets/4704ffb3-4118-4df9-b858-c9d945542021" />
 
 
-Soporte para múltiples archivos en lote.
+
