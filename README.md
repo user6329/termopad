@@ -1,55 +1,33 @@
-Termopad Analyzer con Python y Tkinter
+# 📊 Termopad Analyzer
 
-Este proyecto es una aplicación de escritorio desarrollada en Python utilizando la librería Tkinter que permite analizar datos obtenidos de un termopad a partir de archivos Excel.
+**Termopad Analyzer** es una aplicación de escritorio desarrollada en **Python** con **Tkinter**, diseñada para analizar archivos de datos provenientes de un **termopar/termopad** en formato **Excel**.  
 
-🔹 Funcionalidad
+La aplicación permite cargar un archivo Excel con las columnas necesarias y extraer automáticamente puntos críticos de temperatura, junto con los intervalos de tiempo asociados.  
 
-Cargar un archivo Excel con las columnas:
+---
 
-Tiempo (formato de hora o fecha-hora)
+## 🚀 Características
 
-Temperatura (valores numéricos)
+- Carga de archivos Excel (`.xlsx`, `.xls`).
+- Identificación automática de:
+  - **Rt1:** Tiempo en que la temperatura alcanza 65.3 – 65.7 °C.  
+  - **Rt2:** Tiempo en que la temperatura alcanza 87.3 – 87.9 °C.  
+  - **T_exot:** Tiempo en que se alcanza la **temperatura más alta**.  
+- Cálculo de intervalos de tiempo entre:
+  - Rt1 → Rt2  
+  - Rt2 → T_exot  
+- Soporte para **dos termopares (Temperatura y Temperatura2)**.
+- Interfaz gráfica amigable, con logotipo corporativo y estilos personalizados.
+- Generación de ejecutable con **PyInstaller** para fácil distribución.
 
-Identificar automáticamente:
+---
 
-T1 → El tiempo y temperatura en el rango 65.3°C a 65.7°C
+## 📂 Requisitos
 
-T2 → El tiempo y temperatura en el rango 87.3°C a 87.9°C
+- Python 3.9 o superior (desarrollado con Python 3.13.3).  
+- Librerías necesarias:
+  ```bash
+  pip install pandas openpyxl pillow
 
-T3 → El tiempo y temperatura de la temperatura máxima registrada
-
-Calcular los intervalos de tiempo entre:
-
-T1 → T2
-
-T2 → T3
-
-Mostrar los resultados en una interfaz gráfica sencilla y fácil de usar.
-
-🛠️ Tecnologías utilizadas
-
-Python 3
-
-Tkinter (interfaz gráfica)
-
-Pandas (procesamiento de datos)
-
-OpenPyXL / xlrd (lectura de archivos Excel)
-
-📂 Ejemplo de uso
-
-Abrir la aplicación.
-
-Presionar el botón "Cargar Excel".
-
-Seleccionar un archivo con los datos del termopad.
-
-Visualizar los resultados de T1, T2, T3 e intervalos directamente en la ventana.
-
-🚀 Mejoras futuras
-
-Exportar los resultados a un nuevo archivo Excel.
-
-Añadir gráficos de temperatura vs tiempo.
 
 Soporte para múltiples archivos en lote.
